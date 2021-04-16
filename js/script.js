@@ -1,3 +1,7 @@
 window.addEventListener('load', function () {
-  console.log('Connected...');
+  const searchBtn = document.querySelector('#searchBtn');
+  
+  searchBtn.addEventListener('click', function() {
+    console.log('The search button was clicked');
+  });
 });
