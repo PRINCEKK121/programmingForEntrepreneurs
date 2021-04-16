@@ -5,6 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <!-- google fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Chivo:300,700|Playfair+Display:700i"
+      rel="stylesheet"
+    />
+
     <!-- CSS LINKS -->
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/style.css" />
@@ -20,38 +26,39 @@
 
     <!-- main section -->
     <div id="main">
-      <div id="row">
-        <!-- gender -->
-        <div class="row">
-          <label for="gender">Gender</label>
-          <select id="gender">
-            <option value="A">All</option>
-            <option value="M">Male</option>
-            <option value="F">Female</option>
-          </select>
+      <div class="container">
+        <div id="row">
+          <!-- gender -->
+          <div class="row">
+            <label for="gender">Gender</label>
+            <select id="gender">
+              <option value="A">All</option>
+              <option value="M">Male</option>
+              <option value="F">Female</option>
+            </select>
+          </div>
+
+          <!-- hobbies -->
+          <div class="row">
+            <label for="hobbies">Hobbies</label>
+            <input type="text" id="hobbies" />
+          </div>
+
+          <div class="row">
+            <label for="min-age">Minimum age</label>
+            <input type="number" id="min-age" min="18" max="25" />
+            <label for="Maximum age">Maximum age</label>
+            <input type="number" id="max-age" min="18" max="70" />
+          </div>
+
+          <!-- search -->
+          <div class="row">
+            <button class="btn" id="searchBtn">Search</button>
+          </div>
         </div>
 
-        <!-- hobbies -->
-        <div class="row">
-          <label for="hobbies">Hobbies</label>
-          <input type="text" id="hobbies" />
-        </div>
-
-        <div class="row">
-          <label for="min-age">Minimum age</label>
-          <input type="number" id="min-age" min="18" max="25">
-          <label for="Maximum age">Maximum age</label>
-          <input type="number" id="max-age" min="18" max="70">
-        </div>
-
-        <!-- search -->
-        <div class="row">
-          <button id="searchBtn">Search</button>
-        </div>
-
+        <div id="results"></div>
       </div>
-
-      <div id="results"></div>
     </div>
 
     <script src="js/script.js"></script>

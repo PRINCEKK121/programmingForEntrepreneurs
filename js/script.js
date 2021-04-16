@@ -71,6 +71,10 @@ window.addEventListener('load', function () {
   const results = document.querySelector('#results');
   const gender = document.querySelector('#gender');
 
+  // Changing styles
+  gender.style.fontFamily = 'Chivo';
+  searchBtn.style.fontFamily = 'Playfair Display'
+
   // functions
   const generateHTML = (users) => {
     // grabbing all the user input
