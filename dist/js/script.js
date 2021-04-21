@@ -83,6 +83,7 @@ window.addEventListener('load', function () {
     const minAge = document.querySelector('#min-age').value;
     const maxAge = document.querySelector('#max-age').value;
 
+    
     let resultsHTML = '';
 
     users.forEach((user, index) => {
