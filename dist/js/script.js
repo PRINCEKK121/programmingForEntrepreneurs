@@ -108,9 +108,6 @@ window.addEventListener('load', function () {
     return resultsHTML;
   };
 
-  // generating the template
-  generateHTML(users);
-
   searchBtn.addEventListener('click', function () {
     results.innerHTML = generateHTML(users);
   });
